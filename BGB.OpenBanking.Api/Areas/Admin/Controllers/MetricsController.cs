@@ -7,7 +7,7 @@ using Swashbuckle.AspNetCore.Annotations;
 namespace BGB.OpenBanking.Api.Areas.Admin.Controllers
 {
     [ApiController]
-    public class MetricsApiController : ControllerBase
+    public class MetricsController : ControllerBase
     {
         [HttpGet]
         [Route("/open-banking/admin/v1/metrics")]

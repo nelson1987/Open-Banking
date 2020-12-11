@@ -10,7 +10,7 @@ namespace BGB.OpenBanking.Api.Areas.Common.Controllers
     /// 
     /// </summary>
     [ApiController]
-    public class UnarrangedAccountOverdraftApiController : ControllerBase
+    public class UnarrangedAccountOverdraftController : ControllerBase
     { 
         /// <summary>
         /// Obtém a lista de adiantamento de depositante de Pessoa Jurídica.

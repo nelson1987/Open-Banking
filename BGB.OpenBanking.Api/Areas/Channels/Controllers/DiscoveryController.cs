@@ -11,7 +11,7 @@ namespace BGB.OpenBanking.Api.Areas.Channels.Controllers
     /// 
     /// </summary>
     [ApiController]
-    public class DiscoveryApiController : ControllerBase
+    public class DiscoveryController : ControllerBase
     { 
         /// <summary>
         /// a descrição referente ao código de status retornado pelas APIs

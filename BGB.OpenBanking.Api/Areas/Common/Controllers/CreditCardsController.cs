@@ -10,7 +10,7 @@ namespace BGB.OpenBanking.Api.Areas.Common.Controllers
     /// 
     /// </summary>
     [ApiController]
-    public class CreditCardsApiController : ControllerBase
+    public class CreditCardsController : ControllerBase
     { 
         /// <summary>
         /// Obtém dados sobre cartões de crédito pessoa jurídica

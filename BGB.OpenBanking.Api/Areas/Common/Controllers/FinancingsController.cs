@@ -11,7 +11,7 @@ namespace BGB.OpenBanking.Api.Areas.Common.Controllers
     /// 
     /// </summary>
     [ApiController]
-    public class FinancingsApiController : ControllerBase
+    public class FinancingsController : ControllerBase
     { 
         /// <summary>
         /// Obtém a lista de Financiamentos de Pessoa Jurídica.

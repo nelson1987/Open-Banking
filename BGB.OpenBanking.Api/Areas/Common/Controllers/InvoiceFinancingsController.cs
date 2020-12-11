@@ -10,7 +10,7 @@ namespace BGB.OpenBanking.Api.Areas.Common.Controllers
     /// 
     /// </summary>
     [ApiController]
-    public class InvoiceFinancingsApiController : ControllerBase
+    public class InvoiceFinancingsController : ControllerBase
     { 
         /// <summary>
         /// Obtém a lista de Adiantamento de Recebíveis de Pessoa Jurídica.

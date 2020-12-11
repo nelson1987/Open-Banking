@@ -1,1 +1,5 @@
 GET http://localhost:8086/open-banking/products-services/v2/business-accounts
+###
+GET http://localhost:8086/open-banking/channels/v1/banking-agents
+###
+GET http://localhost:8086/open-banking/channels/v1/banking-agents2

@@ -17,6 +17,9 @@ using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
+using BGB.OpenBanking.Api.Areas.Admin.Models;
+using BGB.OpenBanking.Api.Areas.Channels.Models;
+using BGB.OpenBanking.Api.Areas.Common.Models;
 
 namespace BGB.OpenBanking.Api.Areas.Products_Services.Models
 { 
@@ -25,7 +28,7 @@ namespace BGB.OpenBanking.Api.Areas.Products_Services.Models
     /// </summary>
     [DataContract]
     public partial class ResponseBankingAgentsList : IEquatable<ResponseBankingAgentsList>
-    { 
+    {
         /// <summary>
         /// Gets or Sets Data
         /// </summary>

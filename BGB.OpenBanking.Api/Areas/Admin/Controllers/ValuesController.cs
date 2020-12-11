@@ -5,7 +5,7 @@ namespace BGB.OpenBanking.Areas.Admin.Controllers
 {
     [EnableCors("DefaultPolicy")]
     [Produces("application/json")]
-    [Route("api/[controller]")]
+    [Route("/api/values")]
     //[Authorize("Bearer")]
     [ApiController]
     public class ValuesController : ControllerBase

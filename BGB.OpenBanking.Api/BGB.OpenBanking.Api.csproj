@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Areas\Admin\Controllers\MetricsApi.cs" />
+    <Compile Include="Areas\Admin\Controllers\MetricsController.cs" />
     <Compile Include="Areas\Admin\Controllers\ValuesController.cs" />
     <Compile Include="Areas\Admin\Models\AvailabilityMetrics.cs" />
     <Compile Include="Areas\Admin\Models\AvailabilityMetricsDowntime.cs" />
@@ -41,7 +41,7 @@
     <Compile Include="Areas\Admin\Models\RejectionMetrics.cs" />
     <Compile Include="Areas\Admin\Models\ResponseMetricsList.cs" />
     <Compile Include="Areas\Admin\Models\ResponseMetricsListData.cs" />
-    <Compile Include="Areas\Channels\Controllers\DiscoveryApi.cs" />
+    <Compile Include="Areas\Channels\Controllers\DiscoveryController.cs" />
     <Compile Include="Areas\Channels\Models\Links.cs" />
     <Compile Include="Areas\Channels\Models\Meta.cs" />
     <Compile Include="Areas\Channels\Models\ResponseDiscoveryOutageList.cs" />
@@ -50,14 +50,16 @@
     <Compile Include="Areas\Channels\Models\ResponseDiscoveryStatusListData.cs" />
     <Compile Include="Areas\Channels\Models\Status.cs" />
     <Compile Include="Areas\Common\Attributes\ValidateModelStateAttribute.cs" />
-    <Compile Include="Areas\Common\Controllers\AccountsApi.cs" />
-    <Compile Include="Areas\Common\Controllers\CreditCardsApi.cs" />
-    <Compile Include="Areas\Common\Controllers\FinancingsApi.cs" />
-    <Compile Include="Areas\Common\Controllers\InvoiceFinancingsApi.cs" />
-    <Compile Include="Areas\Common\Controllers\LoansApi.cs" />
-    <Compile Include="Areas\Common\Controllers\UnarrangedAccountOverdraftApi.cs" />
+    <Compile Include="Areas\Common\Controllers\AccountsController.cs" />
+    <Compile Include="Areas\Common\Controllers\CreditCardsController.cs" />
+    <Compile Include="Areas\Common\Controllers\FinancingsController.cs" />
+    <Compile Include="Areas\Common\Controllers\InvoiceFinancingsController.cs" />
+    <Compile Include="Areas\Common\Controllers\LoansController.cs" />
+    <Compile Include="Areas\Common\Controllers\UnarrangedAccountOverdraftController.cs" />
     <Compile Include="Areas\Common\Filters\BasePathFilter.cs" />
     <Compile Include="Areas\Common\Filters\GeneratePathParamsValidationFilter.cs" />
+    <Compile Include="Areas\Common\Filters\PaginationFilter.cs" />
+    <Compile Include="Areas\Common\Helpers\PaginationHelper.cs" />
     <Compile Include="Areas\Common\Models\AccountFee.cs" />
     <Compile Include="Areas\Common\Models\AccountOtherService.cs" />
     <Compile Include="Areas\Common\Models\AccountPriorityService.cs" />
@@ -124,6 +126,7 @@
     <Compile Include="Areas\Common\Models\MinimumPrice.cs" />
     <Compile Include="Areas\Common\Models\MonthlyPrice.cs" />
     <Compile Include="Areas\Common\Models\OpeningClosingChannels.cs" />
+    <Compile Include="Areas\Common\Models\PagedResponse.cs" />
     <Compile Include="Areas\Common\Models\PersonalAccount.cs" />
     <Compile Include="Areas\Common\Models\PersonalAccountBrand.cs" />
     <Compile Include="Areas\Common\Models\PersonalAccountCompany.cs" />
@@ -152,6 +155,7 @@
     <Compile Include="Areas\Common\Models\PriorityServiceName.cs" />
     <Compile Include="Areas\Common\Models\ReferentialRateIndexer.cs" />
     <Compile Include="Areas\Common\Models\RequiredWarranty.cs" />
+    <Compile Include="Areas\Common\Models\Response.cs" />
     <Compile Include="Areas\Common\Models\ResponseBusinessAccounts.cs" />
     <Compile Include="Areas\Common\Models\ResponseBusinessAccountsData.cs" />
     <Compile Include="Areas\Common\Models\ResponseBusinessFinancings.cs" />
@@ -178,7 +182,7 @@
     <Compile Include="Areas\Common\Models\UnarrangedAccountOverdraftRate.cs" />
     <Compile Include="Areas\Common\Models\UnarrangedAccountOverdraftService.cs" />
     <Compile Include="Areas\Common\Security\ApiKeyAuthenticationHandler.cs" />
-    <Compile Include="Areas\Products_Services\Controllers\ChannelsApi.cs" />
+    <Compile Include="Areas\Products_Services\Controllers\ChannelsController.cs" />
     <Compile Include="Areas\Products_Services\Models\Availability.cs" />
     <Compile Include="Areas\Products_Services\Models\AvailabilityStandards.cs" />
     <Compile Include="Areas\Products_Services\Models\BankingAgent.cs" />
@@ -245,6 +249,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.6.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

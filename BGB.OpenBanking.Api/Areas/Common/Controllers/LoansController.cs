@@ -10,7 +10,7 @@ namespace BGB.OpenBanking.Api.Areas.Common.Controllers
     /// 
     /// </summary>
     [ApiController]
-    public class LoansApiController : ControllerBase
+    public class LoansController : ControllerBase
     { 
         /// <summary>
         /// Obtém dados sobre empréstimos pessoa jurídica
