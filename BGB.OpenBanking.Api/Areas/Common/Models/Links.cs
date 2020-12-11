@@ -31,35 +31,35 @@ namespace BGB.OpenBanking.Api.Areas.Common.Models
         /// </summary>
         /// <value>URL da página atualmente requisitada</value>
         [DataMember(Name="self")]
-        public string Self { get; set; }
+        public Uri Self { get; set; }
 
         /// <summary>
         /// URL da primeira página de registros
         /// </summary>
         /// <value>URL da primeira página de registros</value>
         [DataMember(Name="first")]
-        public string First { get; set; }
+        public Uri First { get; set; }
 
         /// <summary>
         /// URL da página anterior de registros
         /// </summary>
         /// <value>URL da página anterior de registros</value>
         [DataMember(Name="prev")]
-        public string Prev { get; set; }
+        public Uri Prev { get; set; }
 
         /// <summary>
         /// URL da próxima página de registros
         /// </summary>
         /// <value>URL da próxima página de registros</value>
         [DataMember(Name="next")]
-        public string Next { get; set; }
+        public Uri Next { get; set; }
 
         /// <summary>
         /// URL da última página de registros
         /// </summary>
         /// <value>URL da última página de registros</value>
         [DataMember(Name="last")]
-        public string Last { get; set; }
+        public Uri Last { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

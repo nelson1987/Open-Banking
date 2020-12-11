@@ -1,4 +1,5 @@
 using BGB.OpenBanking.Api.Areas.Admin.Models;
+using BGB.OpenBanking.Api.Areas.Common.Models;
 
 namespace BGB.OpenBanking.Api.Common.Models
 {
