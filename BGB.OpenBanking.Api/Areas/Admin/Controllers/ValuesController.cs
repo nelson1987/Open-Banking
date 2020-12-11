@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BGB.OpenBanking.Api.Controllers
+namespace BGB.OpenBanking.Areas.Admin.Controllers
 {
     [EnableCors("DefaultPolicy")]
     [Produces("application/json")]
@@ -57,7 +53,6 @@ namespace BGB.OpenBanking.Api.Controllers
             return Ok(new string[] { "value1", "value2" });
         }
 
-
         // DELETE api/values/5
         [HttpDelete("{id}")]
         [ProducesResponseType(204)]//, Type = typeof(IList<Chanel>))]
@@ -73,6 +68,67 @@ namespace BGB.OpenBanking.Api.Controllers
         [ProducesResponseType(503)]
         [ProducesResponseType(504)]
         public IActionResult Delete(int id)
+        {
+            return Ok("value");
+        }
+    }
+
+    /*
+     * open-banking/discovery/v1/status
+     */
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class StatusController : ControllerBase
+    {
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public IActionResult Get(int id)
+        {
+            return Ok("value");
+        }
+    }
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class OutagesController : ControllerBase
+    {
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public IActionResult Get(int id)
+        {
+            return Ok("value");
+        }
+    }
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ChannelsController : ControllerBase
+    {
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public IActionResult ListarDependenciasProprias(int id)
+        {
+            return Ok("value");
+        }
+
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public IActionResult ListarCanaisAtendimentoEletronicos(int id)
+        {
+            return Ok("value");
+        }
+
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public IActionResult ListarCanaisAtendimentoTelefonicos(int id)
+        {
+            return Ok("value");
+        }
+
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public IActionResult ListarTerminaisAutoAtendimentoCompartilhados(int id)
         {
             return Ok("value");
         }
