@@ -1,5 +1,5 @@
 ﻿using BGB.OpenBanking.Api.Areas.Common.Filters;
-using BGB.OpenBanking.Api.Common.Models;
+using BGB.OpenBanking.Api.Contracts.Common;
 using BGB.OpenBanking.Api.Services;
 using System;
 using System.Collections.Generic;

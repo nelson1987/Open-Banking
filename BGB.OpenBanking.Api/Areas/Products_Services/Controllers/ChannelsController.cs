@@ -1,18 +1,16 @@
 using BGB.OpenBanking.Api.Areas.Common.Attributes;
 using BGB.OpenBanking.Api.Areas.Common.Filters;
 using BGB.OpenBanking.Api.Areas.Common.Helpers;
-using BGB.OpenBanking.Api.Areas.Products_Services.Models;
+using BGB.OpenBanking.Api.Contracts.Products_Services;
 using BGB.OpenBanking.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Annotations;
-using System;
-using System.Collections.Generic;
 
 namespace BGB.OpenBanking.Api.Areas.Products_Services.Controllers
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [ApiController]
     public class ChannelsController : ControllerBase

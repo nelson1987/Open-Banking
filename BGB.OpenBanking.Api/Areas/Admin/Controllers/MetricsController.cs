@@ -1,5 +1,5 @@
-using BGB.OpenBanking.Api.Areas.Admin.Models;
 using BGB.OpenBanking.Api.Areas.Common.Attributes;
+using BGB.OpenBanking.Api.Contracts.Admin;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Annotations;
@@ -24,7 +24,7 @@ namespace BGB.OpenBanking.Api.Areas.Admin.Controllers
             var example = exampleJson != null
             ? JsonConvert.DeserializeObject<ResponseMetricsList>(exampleJson)
             : default(ResponseMetricsList);            //TODO: Change the data returned
-            return new ObjectResult(example);
+            return Ok(example);
         }
     }
 }
